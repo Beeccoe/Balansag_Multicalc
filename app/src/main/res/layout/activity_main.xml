@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <Button
+        android:id="@+id/btnDensity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/piss"
+        android:fontFamily="@font/dobramed"
+        android:text="Density Formula"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnAcceleration"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/btnAcceleration"
+        app:layout_constraintTop_toBottomOf="@+id/btnAcceleration" />
+
+    <Button
+        android:id="@+id/btnPower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/piss"
+        android:fontFamily="@font/dobramed"
+        android:text="Power Formula"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnNewton"
+        app:layout_constraintStart_toStartOf="@+id/btnNewton"
+        app:layout_constraintTop_toBottomOf="@+id/btnNewton" />
+
+    <Button
+        android:id="@+id/btnNewton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/piss"
+        android:fontFamily="@font/dobramed"
+        android:text="Newton's Second Law"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnDensity"
+        app:layout_constraintStart_toStartOf="@+id/btnDensity"
+        app:layout_constraintTop_toBottomOf="@+id/btnDensity" />
+
+    <Button
+        android:id="@+id/btnWeight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/piss"
+        android:fontFamily="@font/dobramed"
+        android:text="Weight Formula"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnPower"
+        app:layout_constraintStart_toStartOf="@+id/btnPower"
+        app:layout_constraintTop_toBottomOf="@+id/btnPower" />
+
+    <Button
+        android:id="@+id/btnAcceleration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/piss"
+        android:fontFamily="@font/dobramed"
+        android:text="Acceleration Formula"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Choose A Formula"
+        android:textColor="@color/piss"
+        android:fontFamily="@font/dobra"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
